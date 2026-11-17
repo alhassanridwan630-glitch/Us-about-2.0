@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html { scroll-behavior: smooth; }
+body {
+  @apply bg-midnight font-sans text-cream antialiased;
+  background-image:
+    radial-gradient(60rem 40rem at 50% -10%, rgba(66,20,45,.55), transparent 70%),
+    radial-gradient(40rem 30rem at 100% 40%, rgba(232,93,145,.08), transparent 70%);
+  background-attachment: fixed;
+}
+:focus-visible { outline: 2px solid #F5B8CE; outline-offset: 3px; border-radius: 8px; }
+@media (prefers-reduced-motion: reduce) { * { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
